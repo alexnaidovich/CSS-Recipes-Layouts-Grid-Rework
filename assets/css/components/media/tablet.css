@@ -1,0 +1,90 @@
+@media screen and (max-width: 768px) {
+  
+  body {
+    grid-template-columns: auto;
+    grid-template-rows: 84px 60px auto auto auto;
+    grid-template-areas: "heading"
+                         "header"
+                         "push"
+                         "aside"
+                         "main";
+  }
+
+  header {
+    grid-template-columns: 44px auto 44px;
+    grid-template-areas: "about nav info";
+    align-items: center;
+    grid-gap: 2px 2px;
+  }
+
+  header button.btn-tablet {
+    display: block;
+    height: 98%;
+  }
+
+  header button:active {
+    background-color: #48729e;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  header nav {
+    width: auto;
+    min-width: calc(100% - 88px);
+    padding: 0 25px;
+  }
+
+  header nav ul {
+    width: 100%;
+  }
+
+  aside {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .aside-tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+      justify-content: center;
+  }
+
+  .aside-tags a {
+    margin-right: 20px;
+  }
+
+  .aside-item, .aside-tags a.tag-desktop {
+    display: none;
+  }
+
+  .aside-tags a.tag-tablet {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
+  section {
+    grid-template-columns: 65px auto auto 65px;
+    grid-template-rows: auto auto 40px auto;
+    grid-template-areas: ". img img social"
+                         ". title title ."
+                         ". date author ."
+                         ". post post .";
+    align-items: start;
+  }
+
+  section .post-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .post-social a {
+    margin-bottom: 4px;
+  }
+}

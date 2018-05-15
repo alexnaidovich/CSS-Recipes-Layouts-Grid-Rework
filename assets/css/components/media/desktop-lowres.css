@@ -1,0 +1,27 @@
+@media screen and (max-width: 984px) {
+  body {
+    grid-template-columns: auto calc(100% - 315px) 255px auto;
+  }
+
+  section {
+    grid-template-columns: 130px 130px auto;
+    grid-template-rows: auto auto 40px 40px auto;
+    grid-template-areas: "img img img"
+                         "title title title"
+                         "date author ."
+                         "social social social"
+                         "post post post";
+  }
+
+  section img {
+    max-width: 100%;
+  }
+
+  .post-social {
+    justify-content: start;
+  }
+
+  .post-social a:first-child {
+    margin-left: 0;
+  }
+}

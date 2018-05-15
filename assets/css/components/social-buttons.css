@@ -1,0 +1,87 @@
+
+.post-social--buttons {
+  padding: 6px 6px 0px 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 24px;
+  background-color: #d1dae3;
+  border-radius: 3px;
+  margin-left: 6px;
+  color: #fff;
+  background-image: url(../../img/social-sprite.png);
+  background-position-x: 2px;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: background-color .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: background-color .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.post-social--facebook:hover, .post-social--facebook:active {
+  background-color: #3c5a98;
+}
+
+.post-social--googleplus {
+  background-position-x: -50px;
+}
+
+.post-social--googleplus:hover, .post-social--googleplus:active {
+  background-color: #c25234;
+}
+
+.post-social--twitter {
+  background-position-x: -100px;
+}
+
+.post-social--twitter:hover, .post-social--twitter:active {
+  background-color: #00aced;
+}
+
+.post-social--vk {
+  background-position-x: -150px;
+}
+
+.post-social--vk:hover, .post-social--vk:active {
+  background-color: #48729e;
+}
+
+.post-social--yandex {
+  background-position-x: -200px;
+}
+
+.post-social--yandex:hover, .post-social--yandex:active {
+  background-color: #d83933;
+}
+
+.post-social--tablet {
+  display: none;
+  position: absolute;
+  right: -67px;
+  top: 0;
+}
+
+.post-social--tablet .post-social--buttons {
+  margin-left: 0;
+  margin-bottom: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .post-social--facebook {
+    background-color: #3c5a98;
+  }
+  .post-social--googleplus {
+    background-color: #c25234;
+  }
+  .post-social--twitter {
+    background-color: #00aced;
+  }
+  .post-social--vk {
+    background-color: #48729e;
+  }
+  .post-social--yandex {
+    background-color: #d83933;
+  }
+  
+}

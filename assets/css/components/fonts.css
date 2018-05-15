@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Cantarell;
+  src: url(../../fonts/Cantarell-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'TrendSansOne';
+  src: url(../../fonts/TrendSansOne.otf) format("opentype"),
+       url(../../fonts/TrendSansOne.ttf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Arial Narrow';
+  src: url(../../fonts/ArialNarrow.ttf);
+  font-weight: normal;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}

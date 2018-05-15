@@ -1,0 +1,103 @@
+.grid {
+  display: grid;
+}
+
+body {
+  grid-template-columns: auto 640px 255px auto;
+  grid-template-rows: 84px 60px auto;
+  grid-template-areas: "heading heading heading heading"
+                       "header header header header"
+                       "push push push push"
+                       ". main aside .";
+  grid-column-gap: 20px;                      
+}
+
+h1 {
+  grid-area: heading;
+}
+
+header {
+  grid-area: header;
+  grid-template-rows: 100%;
+  grid-template-columns: auto 60% auto;
+  grid-template-areas: ". nav .";
+}
+
+header nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main, aside {
+  padding-top: 50px;
+}
+
+section {
+  grid-template-columns: 130px 130px auto 275px;
+  grid-template-rows: auto auto 40px auto;
+  grid-template-areas: "img img img img"
+                       "title title title title"
+                       "date author . social"
+                       "post post post post";
+  align-items: center;
+}
+
+section img {
+  grid-area: img;  
+}
+
+section h2 {
+  grid-area: title;
+}
+
+section .post-date {
+  grid-area: date;
+}
+
+section .post-author {
+  grid-area: author;
+}
+
+section .post-social {
+  grid-area: social;
+}
+
+section p {
+  grid-area: post;
+  padding-top: 15px;
+}
+
+.post-social {
+  grid-template-columns: auto auto auto auto auto; 
+  grid-template-rows: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.aside-tags {
+  grid-area: tags;
+}
+
+button[name="about"] {
+  grid-area: about;
+}
+
+button[name="info"] {
+  grid-area: info;
+}
+
+button[name="tags"] {
+  grid-area: tags-btn;
+}
+
+button[name="navigation-menu"] {
+  grid-area: nav-menu;
+  background-color: transparent
+}
